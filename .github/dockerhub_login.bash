@@ -3,6 +3,10 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+export DOCKER_REGISTRY   ?= itisfoundation
+export DOCKER_IMAGE_NAME ?= dummy
+export DOCKER_IMAGE_TAG  ?= $(shell cat VERSION 2> /dev/null || echo undefined)
+
 # check needed variables are defined
 if [ ! -v DOCKER_USERNAME ] ||\
     [ ! -v DOCKER_PASSWORD ] ||\
