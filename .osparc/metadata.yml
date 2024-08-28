@@ -1,0 +1,31 @@
+name: dummy
+key: simcore/services/comp/dummy
+type: computational
+integration-version: 2.0.0
+version: 0.1.0
+description: dummy
+contact: asdf@email.com
+thumbnail: https://github.com/ITISFoundation/osparc-assets/blob/cb43207b6be2f4311c93cd963538d5718b41a023/assets/default-thumbnail-cookiecutter-osparc-service.png?raw=true
+authors:
+  - name: asdf
+    email: asdf@email.com
+    affiliation: sdfas
+inputs:
+  input_1:
+    displayOrder: 1
+    label: input_1_label
+    description: The input 1 description
+    type: string
+    defaultValue: some_value(optional)
+    fileToKeyMap:
+      somefilename.ext: input_1
+  
+outputs:
+  output_1:
+    displayOrder: 1
+    label: output_1_label
+    description: The input 1 description
+    type: string
+    fileToKeyMap:
+      somefilename.ext: output_1
+  
